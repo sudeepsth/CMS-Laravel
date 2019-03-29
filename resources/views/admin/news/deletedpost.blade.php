@@ -26,7 +26,7 @@
                 <tr>
                     <td>{{ $count++ }}</td>
                     <td>{{ $item->title }}</td>
-                    <td>{{ $item->deletes[0]->name }}</td>
+                    <td>{{ $item->users[0]->name }}</td>
                     <td>{{ $item->deleted_at->diffForHumans()}}</td>
                   
                     <td width="250px" class="center-align"><a href="{{ url('/my-admin/news/deletedpost/restore/'.$item->id) }}">Restore </a>&nbsp; | &nbsp; <a href="{{ url('/my-admin/news/deletedpost/permanentdelete/'.$item->id) }}" onclick=" return confirm('Are You Sure ???');">Delete</a></td>

@@ -177,7 +177,6 @@ class AdminNewsController extends Controller {
     public function delpost() {
        
        $newslist = AdminNews::onlyTrashed()->get();
-       
         $result = array(
             'newslist'      => $newslist,
             'page_header'   => 'List of Deleted News',
